@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            text-align: center;
+        }
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .banner .background {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -2;
+        }
+        .banner .character {
+            position: absolute;
+            bottom: 0;
+            right: 10%;
+            height: 100%;
+            object-fit: contain;
+            z-index: -1;
+        }
+        .banner h1, .banner span, .banner button {
+            position: relative;
+            z-index: 1;
+        }
+        .banner h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #000000;
+            margin-top: 0;
+        }
+        .banner span {
+            color: #6a0572;
+            font-style: italic;
+        }
+        .banner button {
+            background: #6a0572;
+            color: #3d0041;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .ofertas {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px 40px 40px 40px;
+            background: white;
+            color: black;
+            width: 1000px;
+            margin: auto;
+        }
+        .oferta-item {
+            width: 20%;
+            text-align: center;
+            position:relative;
+        }
+        .oferta-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .oferta-item p {
+            background: #6a0572;
+            color: darkviolet;
+            padding: 10px;
+            font-weight: bold;
+            position: absolute;
+            top: 80%;
+            margin-left: 30%;
+        }
+        .performance {
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            background: linear-gradient(135deg, #2D013F, #5D0077, #D941A3, #FF6A00, #FF9C00);
+            color: black;
+            margin: auto;
+        }   
+        .performance div{
+            display: flex;          
+        }       
+        .performance div img {
+            width: 30%;
+        }
+        .performance div .text {
+            width: 50%;
+            padding: 20px;
+            display: block;
+            text-align: left;
+            background-color: white;
+            color: lightgray
+        }
+        .performance div h2 {
+            color: lightgrey;
+        }
+        .performance div button {
+            background: gray;
+            color: lightgrey;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        
+    .titulo {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        color: gray;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0;
+        background-color: white;
+    }
+
+    .titulo::before,
+    .titulo::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background-color: lightgray;
+        margin: 0 10px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="banner">       
+        <img src="banner.jpg" alt="Textura do banner" class="background">
+        <img src="personagem.png" alt="Personagem treinando" class="character">
+        <div>
+            <h1>TRANSFORME SEU TREINO COM <br> <span>ESTILO E CONFORTO</span></h1>
+            <button>Explorar loja</button>
+        </div>
+    </div>
+    <div class="titulo">
+        <span>Super Ofertas</span>
+    </div>
+    <div class="ofertas">
+        <div class="oferta-item">
+            <img src="oferta1.webp" alt="Treino na academia">
+            <p>20% OFF</p>
+        </div>
+        <div class="oferta-item">
+            <img src="oferta2.webp" alt="Tênis esportivo">
+            <p>10% OFF</p>
+        </div>
+        <div class="oferta-item">
+            <img src="oferta3.webp" alt="Luva de boxe">
+            <p>30% OFF</p>
+        </div>
+    </div>
+    <div class="performance">
+        <div>
+            <img clas='destaque' src="performance.webp" alt="Treino intenso">
+            <div class="text">
+                <h2>Performance sem Limites</h2>
+                <p>Nossas roupas são projetadas para suportar até os treinos mais intensos, garantindo conforto e confiança.</p>
+                <button>Saiba mais</button>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
